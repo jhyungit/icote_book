@@ -7,7 +7,7 @@ arr = list(map(int, input().split()))
 new_k = k
 answer = 0
 arr.sort(reverse=True)
-print(arr)
+
 for i in range(m):
     if k:
         answer += arr[0]
