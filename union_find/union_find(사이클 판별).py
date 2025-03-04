@@ -16,12 +16,11 @@ def union_parent(parent,a,b):
 
 n,v = 3, 3 # 노드 수, 간선 수
 
-v = [(1,2),(2,3),(1,3)]
+v = [(1,2),(1,3),(2,3)]
 parent = [0] * (n+1)
 
 for i in range(1,n+1):
     parent[i] = i # 부모노드 초기화
-
 cycle = False
 
 for a,b in v:
@@ -30,5 +29,5 @@ for a,b in v:
         break
     else:
         union_parent(parent,a,b)
-
+print(parent)
 print(cycle)
