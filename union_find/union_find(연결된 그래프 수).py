@@ -26,7 +26,7 @@ for i in range(1,v+1):
 for i in range(e):
     a,b = graph[i]
     union_parent(a,b, parent) 
-
+print(parent)
 node = []
 for i in range(1,v+1):
     node.append(find_parent(parent,i))
