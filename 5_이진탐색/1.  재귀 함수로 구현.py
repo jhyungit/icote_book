@@ -1,4 +1,3 @@
-# 재귀 함수로 구현
 def binary_search(array, target, left, right):
     if left > right:
         return None
