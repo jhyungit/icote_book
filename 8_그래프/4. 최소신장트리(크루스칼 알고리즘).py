@@ -28,7 +28,6 @@ edges.sort(key = lambda x : x[2])
 
 for node1, node2, cost in edges:
     if find_parent(parent, node1) != find_parent(parent, node2):
-        print(cost)
         union_parent(parent, node1, node2)
         answer += cost
 
